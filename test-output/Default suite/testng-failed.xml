@@ -5,6 +5,7 @@
     <classes>
       <class name="myTests.MyTestCases">
         <methods>
+          <include name="tearDown"/>
           <include name="fillData"/>
           <include name="setUp"/>
         </methods>

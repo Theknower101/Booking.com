@@ -21,7 +21,6 @@ public class MyTestCases {
         driver.manage().window().maximize();
         home=new HomePage(driver);
     }
-
     @Test(priority=1)
     public void checkTheHomePage() throws InterruptedException {
     	Thread.sleep(1000);
@@ -33,8 +32,8 @@ public class MyTestCases {
     	home.fillData(country);
     }
 
-//    @AfterTest
-//    public void tearDown() {
-//        DriverFactory.killDriver();
-//    }
+    @AfterTest
+    public void tearDown() {
+        DriverFactory.killDriver();
+    }
 }

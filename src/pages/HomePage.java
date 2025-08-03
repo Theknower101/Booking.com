@@ -15,11 +15,13 @@ import org.testng.Assert;
 
 public class HomePage {
 WebDriver driver;
+JavascriptExecutor js;
 String checkInDateString = "Sa 9 August";
 String checkOutDateString = "Sa 23 August";
 String state;
 public HomePage(WebDriver theDriver) {
 	this.driver=theDriver;
+	js=(JavascriptExecutor)driver;
 }
 //Locators
 By loginButtonLocator=By.cssSelector("a[aria-label='Register an account'] span[class='ca2ca5203b']");
@@ -28,8 +30,9 @@ By dateSearchLocators=By.xpath("//button[@data-testid='searchbox-dates-container
 By checkInDateLocator=By.xpath("//span[@aria-label='Sa 9 August 2025']");
 By checkOutDateLocator=By.xpath("//span[@aria-label='Sa 23 August 2025']");
 By searchButtonLocator=By.cssSelector(".de576f5064.b46cd7aad7.ced67027e5.dda427e6b5.e4f9ca4b0c.ca8e0b9533.cfd71fb584.a9d40b8d51");
-By filterLocator=By.xpath("//button[@class='de576f5064 fcd8e16f81']");
+By filterLocator=By.xpath("//button[@data-testid='sorters-dropdown-trigger']");
 By lowPriceFilter=By.cssSelector("button[aria-label='Price (lowest first)']");
+By highPriceFilter=By.xpath("//button[@aria-label='Price (highest first)']");
 public void checkHomePageTest() {
 	Assert.assertEquals(logInButtonIsDisplayed(), true);
 }
@@ -46,11 +49,23 @@ public void fillData(String country) throws InterruptedException {
     Thread.sleep(2000);
     Assert.assertEquals(checkTheFilterResult(), true);
     Thread.sleep(2000);
+    js.executeScript("window.scrollTo(0,200)");
+    Thread.sleep(2000);
     driver.findElement(filterLocator).click();
     Thread.sleep(2000);
     driver.findElement(lowPriceFilter).click();
     Thread.sleep(1000);
+    js.executeScript("window.scrollTo(0,200)");
+    Thread.sleep(1000);
     Assert.assertEquals(checkTheLowestPrice(), true);
+    Thread.sleep(2000);
+    js.executeScript("window.scrollTo(0,200)");
+    Thread.sleep(2000);
+    driver.findElement(filterLocator).click();
+    Thread.sleep(2000);
+    driver.findElement(highPriceFilter).click();
+    Thread.sleep(000);
+//    Assert.assertEquals(checkTheHighestPrice() , true);
 }
 public boolean logInButtonIsDisplayed() {
 	return driver.findElement(loginButtonLocator).isDisplayed();
@@ -63,11 +78,14 @@ public boolean checkTheFilterResult() {
 	return driver.getPageSource().contains(inputValue);
 }
 public boolean checkTheLowestPrice() {
-	List<WebElement>allPrice=driver.findElements(By.className("b87c397a13"));
-	String firstPriceString=allPrice.get(0).getText().replace("JOD ", "");
+	WebElement container=driver.findElement(By.className("d3ef0e3593"));
+	List<WebElement>allPrices=container.findElements(By.xpath("//span[@data-testid='price-and-discounted-price']"));
+	System.out.println(allPrices.get(0).getText());
+	String firstPriceString=allPrices.get(0).getText().replace("JOD ","");
+	String lastPriceString=allPrices.get(allPrices.size()-1).getText().replace("JOD ","");
 	int firstPrice=Integer.parseInt(firstPriceString);
-	String lastPriceString=allPrice.get(allPrice.size()-1).getText().replace("JOD ", "");
 	int lastPrice=Integer.parseInt(lastPriceString);
 	return firstPrice<lastPrice;
 }
+
 }
