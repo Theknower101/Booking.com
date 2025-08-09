@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-03T18:10:08 EET" name="Default suite" finished-at="2025-08-03T18:10:47 EET" duration-ms="39806">
+  <suite started-at="2025-08-09T18:14:25 EET" name="Default suite" finished-at="2025-08-09T18:15:05 EET" duration-ms="39610">
     <groups>
     </groups>
-    <test started-at="2025-08-03T18:10:08 EET" name="Default test" finished-at="2025-08-03T18:10:47 EET" duration-ms="39806">
+    <test started-at="2025-08-09T18:14:25 EET" name="Default test" finished-at="2025-08-09T18:15:05 EET" duration-ms="39610">
       <class name="myTests.MyTestCases">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:myTests.MyTestCases@795cd85e]" started-at="2025-08-03T18:10:08 EET" name="setUp" finished-at="2025-08-03T18:10:11 EET" duration-ms="3269" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:myTests.MyTestCases@795cd85e]" started-at="2025-08-09T18:14:25 EET" name="setUp" finished-at="2025-08-09T18:14:32 EET" duration-ms="6951" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkTheHomePage()[pri:1, instance:myTests.MyTestCases@795cd85e]" started-at="2025-08-03T18:10:11 EET" name="checkTheHomePage" finished-at="2025-08-03T18:10:15 EET" duration-ms="4154" status="PASS">
+        <test-method signature="checkTheHomePage()[pri:1, instance:myTests.MyTestCases@795cd85e]" started-at="2025-08-09T18:14:32 EET" name="checkTheHomePage" finished-at="2025-08-09T18:14:33 EET" duration-ms="1056" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTheHomePage -->
-        <test-method signature="fillData()[pri:2, instance:myTests.MyTestCases@795cd85e]" started-at="2025-08-03T18:10:15 EET" name="fillData" finished-at="2025-08-03T18:10:47 EET" duration-ms="31999" status="PASS">
+        <test-method signature="searchForHotels()[pri:2, instance:myTests.MyTestCases@795cd85e]" started-at="2025-08-09T18:14:33 EET" name="searchForHotels" finished-at="2025-08-09T18:15:04 EET" duration-ms="31208" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fillData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:myTests.MyTestCases@795cd85e]" started-at="2025-08-03T18:10:47 EET" name="tearDown" finished-at="2025-08-03T18:10:47 EET" duration-ms="319" status="PASS">
+        </test-method> <!-- searchForHotels -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:myTests.MyTestCases@795cd85e]" started-at="2025-08-09T18:15:04 EET" name="tearDown" finished-at="2025-08-09T18:15:05 EET" duration-ms="352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
