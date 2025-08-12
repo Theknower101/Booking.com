@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\96279\AppData\Local\Temp\testng-eclipse-343396664\testng-customsuite.xml</span>
+                    <span>C:\Users\96279\AppData\Local\Temp\testng-eclipse--664968890\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -109,7 +109,7 @@
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="myTests.MyTestCases" class="method navigator-link" hash-for-method="searchForHotels">searchForHotels</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="myTests.MyTestCases" class="method navigator-link" hash-for-method="openHotelAndBook">openHotelAndBook</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -133,7 +133,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="myTests.MyTestCases" class="method navigator-link" hash-for-method="openHotelAndBook">openHotelAndBook</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="myTests.MyTestCases" class="method navigator-link" hash-for-method="searchForHotels">searchForHotels</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -169,15 +169,15 @@
                   <a name="fillBookingForm">
                   </a> <!-- fillBookingForm -->
                   <span class="method-name">fillBookingForm</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;address1&apos;]&quot;}
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;firstname&apos;]&quot;}
   (Session info: chrome=138.0.7204.185)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dfad0b0f2596b37cd26130aab5d21b25, findElement {using=name, value=address1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\96279\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dfad0b0f2596b37cd26130aab5d21b25
+Command: [5a2c37120f932a275313c36eb6a29e5a, findElement {using=name, value=firstname}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\96279\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58582/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a2c37120f932a275313c36eb6a29e5a
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -194,7 +194,8 @@ Session ID: dfad0b0f2596b37cd26130aab5d21b25
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at myTests.MyTestCases.fillBookingForm(MyTestCases.java:77)
+	at pages.BookingForm.fillBookingForm(BookingForm.java:20)
+	at myTests.MyTestCases.fillBookingForm(MyTestCases.java:78)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -229,18 +230,38 @@ Session ID: dfad0b0f2596b37cd26130aab5d21b25
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="searchForHotels">
-                  </a> <!-- searchForHotels -->
-                  <span class="method-name">searchForHotels</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:819)
-	at org.testng.Assert.assertEquals(Assert.java:829)
-	at pages.HomePage.fillData(HomePage.java:89)
-	at myTests.MyTestCases.searchForHotels(MyTestCases.java:46)
+                  <a name="openHotelAndBook">
+                  </a> <!-- openHotelAndBook -->
+                  <span class="method-name">openHotelAndBook</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;txp-bui-header-pp bui-button bui-button--primary 
+book_now_button_handler
+&quot; id=&quot;hp_book_now_button&quot; type=&quot;button&quot; data-url=&quot;&quot; aria-description=&quot;
+Žiūrėti laisvas vietas ir kainas
+&quot; data-et-click=&quot;goal:hp_d_reserve_button_top_of_hp_clicked customGoal:eWHMcCcCcCSYeJdBbFUdWHDXKe:1 customGoal:eWHMcCcCcCSYeJZOIYCZYPfWRHZGFGHbOPHe:2&quot; data-et-view=&quot;eWHMcCcCcCSYeJZOIYCZYPfWRHZGFGHbOPHe:1&quot; data-et-mouseenter=&quot; customGoal:eWHMcCcCcCSYeJZOIYCZYPfWRHZGFGHbOPHe:1 eWHMcCcCcCSYeJZOIYCZYPfWRHZGFGHbOPHe:2    eWHMcCcCcCSYeJZOIYCZYPfWRHZGFGHbOPHe:6    eWHMcCcCcCSYeJZOIYCZYPfWRHZGFGHbOPHe:8  &quot;&gt;...&lt;/button&gt; is not clickable at point (1257, 344). Other element would receive the click: &lt;div style=&quot;z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=138.0.7204.185)
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5a2c37120f932a275313c36eb6a29e5a, clickElement {id=f.2E11DC2F1B2946DCC804ED278F550133.d.FC2941B7900DEB941CE5C9F59AC1D668.e.162}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\96279\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58582/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5a2c37120f932a275313c36eb6a29e5a)] -&gt; xpath: //button[@id=&apos;hp_book_now_button&apos;]]
+Session ID: 5a2c37120f932a275313c36eb6a29e5a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pages.HotelsPage.reserveHotel(HotelsPage.java:22)
+	at myTests.MyTestCases.openHotelAndBook(MyTestCases.java:74)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -297,9 +318,9 @@ Session ID: dfad0b0f2596b37cd26130aab5d21b25
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="openHotelAndBook">
-                  </a> <!-- openHotelAndBook -->
-                  <span class="method-name">openHotelAndBook</span>
+                  <a name="searchForHotels">
+                  </a> <!-- searchForHotels -->
+                  <span class="method-name">searchForHotels</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -321,7 +342,7 @@ Session ID: dfad0b0f2596b37cd26130aab5d21b25
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\96279\AppData\Local\Temp\testng-eclipse-343396664\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\96279\AppData\Local\Temp\testng-eclipse--664968890\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -374,31 +395,31 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'searchForHotels')
 data.setCell(0, 2, 'myTests.MyTestCases')
-data.setCell(0, 3, 31547);
+data.setCell(0, 3, 44645);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginProcess')
 data.setCell(1, 2, 'myTests.MyTestCases')
-data.setCell(1, 3, 23238);
+data.setCell(1, 3, 26367);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'openHotelAndBook')
 data.setCell(2, 2, 'myTests.MyTestCases')
-data.setCell(2, 3, 16722);
+data.setCell(2, 3, 12864);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testCurrencySelection')
+data.setCell(3, 1, 'testLanguageSelection')
 data.setCell(3, 2, 'myTests.MyTestCases')
-data.setCell(3, 3, 10195);
+data.setCell(3, 3, 12019);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testLanguageSelection')
+data.setCell(4, 1, 'testCurrencySelection')
 data.setCell(4, 2, 'myTests.MyTestCases')
-data.setCell(4, 3, 6866);
+data.setCell(4, 3, 11721);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'fillBookingForm')
+data.setCell(5, 1, 'checkTheHomePage')
 data.setCell(5, 2, 'myTests.MyTestCases')
-data.setCell(5, 3, 5620);
+data.setCell(5, 3, 1142);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'checkTheHomePage')
+data.setCell(6, 1, 'fillBookingForm')
 data.setCell(6, 2, 'myTests.MyTestCases')
-data.setCell(6, 3, 1078);
+data.setCell(6, 3, 370);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -436,39 +457,39 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">checkTheHomePage</span>
-                <span class="method-start">7406 ms</span>
+                <span class="method-start">12604 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchForHotels</span>
+                <span class="method-start">13762 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLanguageSelection</span>
+                <span class="method-start">58415 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCurrencySelection</span>
+                <span class="method-start">70438 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">searchForHotels</span>
-                <span class="method-start">8490 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testLanguageSelection</span>
-                <span class="method-start">40040 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testCurrencySelection</span>
-                <span class="method-start">46907 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">openHotelAndBook</span>
-                <span class="method-start">57104 ms</span>
+                <span class="method-start">82162 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">fillBookingForm</span>
-                <span class="method-start">73827 ms</span>
+                <span class="method-start">95058 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginProcess</span>
-                <span class="method-start">79450 ms</span>
+                <span class="method-start">95434 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">102690 ms</span>
+                <span class="method-start">121808 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

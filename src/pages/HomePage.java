@@ -56,10 +56,11 @@ public void fillData(String country) throws InterruptedException, TimeoutExcepti
     Thread.sleep(1000);
     closeSignUpPopupIfExists();
     Assert.assertEquals(checkTheFilterResult(), true);
-    Thread.sleep(1000);
+    Thread.sleep(2000);
     js.executeScript("window.scrollTo(0,200)");
     Thread.sleep(1000);
     driver.findElement(filterLocator).click();
+    closeSignUpPopupIfExists();
     Thread.sleep(1000);
     driver.findElement(lowPriceFilter).click();
     Thread.sleep(1000);
@@ -70,6 +71,7 @@ public void fillData(String country) throws InterruptedException, TimeoutExcepti
     js.executeScript("window.scrollTo(0,200)");
     Thread.sleep(1000);
     driver.findElement(filterLocator).click();
+    closeSignUpPopupIfExists();
     Thread.sleep(1000);
     driver.findElement(highPriceFilter).click();
     Thread.sleep(1000);
@@ -79,14 +81,19 @@ public void fillData(String country) throws InterruptedException, TimeoutExcepti
     Thread.sleep(1000);
     js.executeScript("window.scrollTo(0,200)");
     driver.findElement(filterLocator).click();
+    closeSignUpPopupIfExists();
     Thread.sleep(1000);
     driver.findElement(highestRatingFilterLocator).click();
     Thread.sleep(1000);
     js.executeScript("window.scrollTo(0,2000)");
     Thread.sleep(1000);
-   driver.findElement(By.xpath("//div[@data-filters-group='review_score']")).click();
+   driver.findElement(By.xpath("//div[@data-filters-item='review_score:review_score=90']")).click();
     Thread.sleep(1000);
     Assert.assertEquals(verifyTheRate(), true);
+    Thread.sleep(1000);
+    WebElement sliderHandle = driver.findElement(By.className("b23ce1909f"));  // replace with correct handle selector
+    action.clickAndHold(sliderHandle).moveByOffset(100, 0).release().perform();
+
     }
 public boolean logInButtonIsDisplayed() {
 	return driver.findElement(loginButtonLocator).isDisplayed();
@@ -132,8 +139,8 @@ public void closeSignUpPopupIfExists() throws InterruptedException {
 }
 public boolean verifyTheRate() {
 	List<WebElement> rates=driver.findElements(By.className("f63b14ab7a"));
-double rate=Double.parseDouble(rates.get(0).getText());
-return rate>8;
+    double rate=Double.parseDouble(rates.get(0).getText().replace("Exceptional ",""));
+return rate>9;
 }
 }
  

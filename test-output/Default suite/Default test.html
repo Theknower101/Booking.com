@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>5/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 11 19:05:13 EET 2025</td>
+<td>Started on:</td><td>Tue Aug 12 18:19:04 EET 2025</td>
 </tr>
-<tr><td>Total time:</td><td>103 seconds (103099 ms)</td>
+<tr><td>Total time:</td><td>122 seconds (122562 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,36 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='myTests.MyTestCases.searchForHotels()'><b>searchForHotels</b><br>Test class: myTests.MyTestCases</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:819)
-	at org.testng.Assert.assertEquals(Assert.java:829)
-	at pages.HomePage.fillData(HomePage.java:89)
-	at myTests.MyTestCases.searchForHotels(MyTestCases.java:46)
+<td title='myTests.MyTestCases.openHotelAndBook()'><b>openHotelAndBook</b><br>Test class: myTests.MyTestCases</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;txp-bui-header-pp bui-button bui-button--primary 
+book_now_button_handler
+&quot; id=&quot;hp_book_now_button&quot; type=&quot;button&quot; data-url=&quot;&quot; aria-description=&quot;
+Žiūrėti laisvas vietas ir kainas
+&quot; data-et-click=&quot;goal:hp_d_reserve_button_top_of_hp_clicked customGoal:eWHMcCcCcCSYeJdBbFUdWHDXKe:1 customGoal:eWHMcCcCcCSYeJZOIYCZYPfWRHZGFGHbOPHe:2&quot; data-et-view=&quot;eWHMcCcCcCSYeJZOIYCZYPfWRHZGFGHbOPHe:1&quot; data-et-mouseenter=&quot; customGoal:eWHMcCcCcCSYeJZOIYCZYPfWRHZGFGHbOPHe:1 eWHMcCcCcCSYeJZOIYCZYPfWRHZGFGHbOPHe:2    eWHMcCcCcCSYeJZOIYCZYPfWRHZGFGHbOPHe:6    eWHMcCcCcCSYeJZOIYCZYPfWRHZGFGHbOPHe:8  &quot;&gt;...&lt;/button&gt; is not clickable at point (1257, 344). Other element would receive the click: &lt;div style=&quot;z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=138.0.7204.185)
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5a2c37120f932a275313c36eb6a29e5a, clickElement {id=f.2E11DC2F1B2946DCC804ED278F550133.d.FC2941B7900DEB941CE5C9F59AC1D668.e.162}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\96279\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58582/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5a2c37120f932a275313c36eb6a29e5a)] -&gt; xpath: //button[@id=&apos;hp_book_now_button&apos;]]
+Session ID: 5a2c37120f932a275313c36eb6a29e5a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pages.HotelsPage.reserveHotel(HotelsPage.java:22)
+	at myTests.MyTestCases.openHotelAndBook(MyTestCases.java:74)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -113,16 +133,36 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace407493402", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace407493402'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:819)
-	at org.testng.Assert.assertEquals(Assert.java:829)
-	at pages.HomePage.fillData(HomePage.java:89)
-	at myTests.MyTestCases.searchForHotels(MyTestCases.java:46)
+</pre></div><a href='#' onClick='toggleBox("stack-trace583015088", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace583015088'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;txp-bui-header-pp bui-button bui-button--primary 
+book_now_button_handler
+&quot; id=&quot;hp_book_now_button&quot; type=&quot;button&quot; data-url=&quot;&quot; aria-description=&quot;
+Žiūrėti laisvas vietas ir kainas
+&quot; data-et-click=&quot;goal:hp_d_reserve_button_top_of_hp_clicked customGoal:eWHMcCcCcCSYeJdBbFUdWHDXKe:1 customGoal:eWHMcCcCcCSYeJZOIYCZYPfWRHZGFGHbOPHe:2&quot; data-et-view=&quot;eWHMcCcCcCSYeJZOIYCZYPfWRHZGFGHbOPHe:1&quot; data-et-mouseenter=&quot; customGoal:eWHMcCcCcCSYeJZOIYCZYPfWRHZGFGHbOPHe:1 eWHMcCcCcCSYeJZOIYCZYPfWRHZGFGHbOPHe:2    eWHMcCcCcCSYeJZOIYCZYPfWRHZGFGHbOPHe:6    eWHMcCcCcCSYeJZOIYCZYPfWRHZGFGHbOPHe:8  &quot;&gt;...&lt;/button&gt; is not clickable at point (1257, 344). Other element would receive the click: &lt;div style=&quot;z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=138.0.7204.185)
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5a2c37120f932a275313c36eb6a29e5a, clickElement {id=f.2E11DC2F1B2946DCC804ED278F550133.d.FC2941B7900DEB941CE5C9F59AC1D668.e.162}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\96279\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58582/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5a2c37120f932a275313c36eb6a29e5a)] -&gt; xpath: //button[@id=&apos;hp_book_now_button&apos;]]
+Session ID: 5a2c37120f932a275313c36eb6a29e5a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pages.HotelsPage.reserveHotel(HotelsPage.java:22)
+	at myTests.MyTestCases.openHotelAndBook(MyTestCases.java:74)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -152,19 +192,19 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>31</td>
+<td>12</td>
 <td>myTests.MyTestCases@384ad17b</td></tr>
 <tr>
 <td title='myTests.MyTestCases.fillBookingForm()'><b>fillBookingForm</b><br>Test class: myTests.MyTestCases</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;address1&apos;]&quot;}
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;firstname&apos;]&quot;}
   (Session info: chrome=138.0.7204.185)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dfad0b0f2596b37cd26130aab5d21b25, findElement {using=name, value=address1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\96279\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dfad0b0f2596b37cd26130aab5d21b25
+Command: [5a2c37120f932a275313c36eb6a29e5a, findElement {using=name, value=firstname}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\96279\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58582/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a2c37120f932a275313c36eb6a29e5a
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -181,7 +221,8 @@ Session ID: dfad0b0f2596b37cd26130aab5d21b25
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at myTests.MyTestCases.fillBookingForm(MyTestCases.java:77)
+	at pages.BookingForm.fillBookingForm(BookingForm.java:20)
+	at myTests.MyTestCases.fillBookingForm(MyTestCases.java:78)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -210,16 +251,16 @@ Session ID: dfad0b0f2596b37cd26130aab5d21b25
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace268599241", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace268599241'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;address1&apos;]&quot;}
+</pre></div><a href='#' onClick='toggleBox("stack-trace679449777", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace679449777'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;firstname&apos;]&quot;}
   (Session info: chrome=138.0.7204.185)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dfad0b0f2596b37cd26130aab5d21b25, findElement {using=name, value=address1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\96279\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60765}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60765/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dfad0b0f2596b37cd26130aab5d21b25
+Command: [5a2c37120f932a275313c36eb6a29e5a, findElement {using=name, value=firstname}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\96279\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58582}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58582/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a2c37120f932a275313c36eb6a29e5a
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -236,7 +277,8 @@ Session ID: dfad0b0f2596b37cd26130aab5d21b25
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at myTests.MyTestCases.fillBookingForm(MyTestCases.java:77)
+	at pages.BookingForm.fillBookingForm(BookingForm.java:20)
+	at myTests.MyTestCases.fillBookingForm(MyTestCases.java:78)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -266,7 +308,7 @@ Session ID: dfad0b0f2596b37cd26130aab5d21b25
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>5</td>
+<td>0</td>
 <td>myTests.MyTestCases@384ad17b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -277,29 +319,29 @@ Session ID: dfad0b0f2596b37cd26130aab5d21b25
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='myTests.MyTestCases.testLanguageSelection()'><b>testLanguageSelection</b><br>Test class: myTests.MyTestCases</td>
+<td></td>
+<td>12</td>
+<td>myTests.MyTestCases@384ad17b</td></tr>
+<tr>
 <td title='myTests.MyTestCases.loginProcess()'><b>loginProcess</b><br>Test class: myTests.MyTestCases</td>
 <td></td>
-<td>23</td>
+<td>26</td>
 <td>myTests.MyTestCases@384ad17b</td></tr>
 <tr>
 <td title='myTests.MyTestCases.testCurrencySelection()'><b>testCurrencySelection</b><br>Test class: myTests.MyTestCases</td>
 <td></td>
-<td>10</td>
+<td>11</td>
 <td>myTests.MyTestCases@384ad17b</td></tr>
 <tr>
-<td title='myTests.MyTestCases.testLanguageSelection()'><b>testLanguageSelection</b><br>Test class: myTests.MyTestCases</td>
+<td title='myTests.MyTestCases.searchForHotels()'><b>searchForHotels</b><br>Test class: myTests.MyTestCases</td>
 <td></td>
-<td>6</td>
+<td>44</td>
 <td>myTests.MyTestCases@384ad17b</td></tr>
 <tr>
 <td title='myTests.MyTestCases.checkTheHomePage()'><b>checkTheHomePage</b><br>Test class: myTests.MyTestCases</td>
 <td></td>
 <td>1</td>
-<td>myTests.MyTestCases@384ad17b</td></tr>
-<tr>
-<td title='myTests.MyTestCases.openHotelAndBook()'><b>openHotelAndBook</b><br>Test class: myTests.MyTestCases</td>
-<td></td>
-<td>16</td>
 <td>myTests.MyTestCases@384ad17b</td></tr>
 </table><p>
 </body>
