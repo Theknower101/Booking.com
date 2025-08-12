@@ -100,9 +100,6 @@ public boolean logInButtonIsDisplayed() {
 }
 public boolean checkTheFilterResult() {
 	String inputValue=driver.findElement(countrySearchLocator).getAttribute("value");
-	List<WebElement>allHotels=driver.findElements(By.className("d823fbbeed"));
-	System.out.println(inputValue);
-	System.out.println(allHotels.get(0).getText());
 	return driver.getPageSource().contains(inputValue);
 }
 public boolean checkTheLowestPrice() {

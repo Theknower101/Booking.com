@@ -52,6 +52,7 @@ public class MyTestCases {
     }
     @Test(priority=2)
     public void searchForHotels() throws InterruptedException, TimeoutException {
+    	Thread.sleep(1000);
     	country=TestDataGenerator.getCountryRandomly();
     	home.fillData(country);
     }

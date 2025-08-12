@@ -6,9 +6,8 @@
       <class name="myTests.MyTestCases">
         <methods>
           <include name="tearDown"/>
-          <include name="fillBookingForm"/>
+          <include name="searchForHotels"/>
           <include name="setUp"/>
-          <include name="openHotelAndBook"/>
         </methods>
       </class> <!-- myTests.MyTestCases -->
     </classes>
