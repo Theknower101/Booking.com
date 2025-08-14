@@ -43,6 +43,8 @@ public void checkHomePageTest() {
 	Assert.assertEquals(logInButtonIsDisplayed(), true);
 }
 public void fillData(String country) throws InterruptedException, TimeoutException {
+	
+	Thread.sleep(1000);
 	 closeSignUpPopupIfExists();
 	driver.findElement(countrySearchLocator).sendKeys(country);
 	Thread.sleep(1000);
@@ -55,7 +57,7 @@ public void fillData(String country) throws InterruptedException, TimeoutExcepti
     driver.findElement(searchButtonLocator).click();
     Thread.sleep(1000);
     closeSignUpPopupIfExists();
-    Assert.assertEquals(checkTheFilterResult(), true);
+    Assert.assertEquals(checkTheFilterResult(), true,"The Country is wrong");
     Thread.sleep(2000);
     js.executeScript("window.scrollTo(0,200)");
     Thread.sleep(1000);
@@ -89,7 +91,7 @@ public void fillData(String country) throws InterruptedException, TimeoutExcepti
     Thread.sleep(1000);
    driver.findElement(By.xpath("//div[@data-filters-item='review_score:review_score=90']")).click();
     Thread.sleep(1000);
-    Assert.assertEquals(verifyTheRate(), true);
+    Assert.assertEquals(verifyTheRate(), true,"The rate is wrong");
     Thread.sleep(1000);
     WebElement sliderHandle = driver.findElement(By.className("b23ce1909f"));  // replace with correct handle selector
     action.clickAndHold(sliderHandle).moveByOffset(100, 0).release().perform();

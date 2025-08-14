@@ -1,45 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-12T19:42:13 EET" name="Default suite" finished-at="2025-08-12T19:44:08 EET" duration-ms="115812">
+  <suite started-at="2025-08-14T18:56:52 EET" name="Default suite" finished-at="2025-08-14T18:58:45 EET" duration-ms="113154">
     <groups>
     </groups>
-    <test started-at="2025-08-12T19:42:13 EET" name="Default test" finished-at="2025-08-12T19:44:08 EET" duration-ms="115812">
+    <test started-at="2025-08-14T18:56:52 EET" name="Default test" finished-at="2025-08-14T18:58:45 EET" duration-ms="113154">
       <class name="myTests.MyTestCases">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:myTests.MyTestCases@384ad17b]" started-at="2025-08-12T19:42:13 EET" name="setUp" finished-at="2025-08-12T19:42:19 EET" duration-ms="6700" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:myTests.MyTestCases@42e99e4a]" started-at="2025-08-14T18:56:52 EET" name="setUp" finished-at="2025-08-14T18:56:56 EET" duration-ms="4206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkTheHomePage()[pri:1, instance:myTests.MyTestCases@384ad17b]" started-at="2025-08-12T19:42:19 EET" name="checkTheHomePage" finished-at="2025-08-12T19:42:20 EET" duration-ms="1079" status="PASS">
+        <test-method signature="checkTheHomePage()[pri:1, instance:myTests.MyTestCases@42e99e4a]" started-at="2025-08-14T18:56:56 EET" name="checkTheHomePage" finished-at="2025-08-14T18:57:00 EET" duration-ms="3067" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTheHomePage -->
-        <test-method signature="searchForHotels()[pri:2, instance:myTests.MyTestCases@384ad17b]" started-at="2025-08-12T19:42:20 EET" name="searchForHotels" finished-at="2025-08-12T19:42:50 EET" duration-ms="29616" status="PASS">
+        <test-method signature="searchForHotels()[pri:2, instance:myTests.MyTestCases@42e99e4a]" started-at="2025-08-14T18:57:00 EET" name="searchForHotels" finished-at="2025-08-14T18:57:36 EET" duration-ms="36571" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchForHotels -->
-        <test-method signature="testLanguageSelection()[pri:3, instance:myTests.MyTestCases@384ad17b]" started-at="2025-08-12T19:42:50 EET" name="testLanguageSelection" finished-at="2025-08-12T19:42:56 EET" duration-ms="5455" status="PASS">
+        <test-method signature="testLanguageSelection()[pri:3, instance:myTests.MyTestCases@42e99e4a]" started-at="2025-08-14T18:57:36 EET" name="testLanguageSelection" finished-at="2025-08-14T18:57:44 EET" duration-ms="7589" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLanguageSelection -->
-        <test-method signature="testCurrencySelection()[pri:4, instance:myTests.MyTestCases@384ad17b]" started-at="2025-08-12T19:42:56 EET" name="testCurrencySelection" finished-at="2025-08-12T19:43:03 EET" duration-ms="7394" status="PASS">
+        <test-method signature="testCurrencySelection()[pri:4, instance:myTests.MyTestCases@42e99e4a]" started-at="2025-08-14T18:57:44 EET" name="testCurrencySelection" finished-at="2025-08-14T18:57:50 EET" duration-ms="6475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCurrencySelection -->
-        <test-method signature="openHotelAndBook()[pri:5, instance:myTests.MyTestCases@384ad17b]" started-at="2025-08-12T19:43:03 EET" name="openHotelAndBook" finished-at="2025-08-12T19:43:21 EET" duration-ms="18045" status="PASS">
+        <test-method signature="openHotelAndBook()[pri:5, instance:myTests.MyTestCases@42e99e4a]" started-at="2025-08-14T18:57:50 EET" name="openHotelAndBook" finished-at="2025-08-14T18:58:03 EET" duration-ms="12698" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openHotelAndBook -->
-        <test-method signature="fillBookingForm()[pri:6, instance:myTests.MyTestCases@384ad17b]" started-at="2025-08-12T19:43:21 EET" name="fillBookingForm" finished-at="2025-08-12T19:43:26 EET" duration-ms="4850" status="PASS">
+        <test-method signature="fillBookingForm()[pri:6, instance:myTests.MyTestCases@42e99e4a]" started-at="2025-08-14T18:58:03 EET" name="fillBookingForm" finished-at="2025-08-14T18:58:09 EET" duration-ms="5904" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillBookingForm -->
-        <test-method signature="loginProcess()[pri:7, instance:myTests.MyTestCases@384ad17b]" started-at="2025-08-12T19:43:26 EET" name="loginProcess" finished-at="2025-08-12T19:44:08 EET" duration-ms="42195" status="PASS">
+        <test-method signature="signUpProcess()[pri:7, instance:myTests.MyTestCases@42e99e4a]" started-at="2025-08-14T18:58:09 EET" name="signUpProcess" finished-at="2025-08-14T18:58:37 EET" duration-ms="28181" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginProcess -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:myTests.MyTestCases@384ad17b]" started-at="2025-08-12T19:44:08 EET" name="tearDown" finished-at="2025-08-12T19:44:08 EET" duration-ms="422" status="PASS">
+        </test-method> <!-- signUpProcess -->
+        <test-method signature="testSupportPage()[pri:8, instance:myTests.MyTestCases@42e99e4a]" started-at="2025-08-14T18:58:37 EET" name="testSupportPage" finished-at="2025-08-14T18:58:39 EET" duration-ms="1872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSupportPage -->
+        <test-method signature="checkOfferPage()[pri:9, instance:myTests.MyTestCases@42e99e4a]" started-at="2025-08-14T18:58:39 EET" name="checkOfferPage" finished-at="2025-08-14T18:58:45 EET" duration-ms="5712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOfferPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:myTests.MyTestCases@42e99e4a]" started-at="2025-08-14T18:58:45 EET" name="tearDown" finished-at="2025-08-14T18:58:45 EET" duration-ms="778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

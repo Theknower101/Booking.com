@@ -1,35 +1,32 @@
 package myTests;
-import java.time.Duration;
 import java.util.Random;
 import java.util.concurrent.TimeoutException;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import pages.BookingForm;
+import pages.CurrencyPage;
 import pages.HomePage;
 import pages.HotelsPage;
-import pages.LanguageCurrencyPage;
-import pages.LoginPage;
+import pages.LanguagePage;
+import pages.OfferPage;
+import pages.SignUpPage;
+import pages.SupportPage;
 import utils.DriverFactory;
 import utils.TestDataGenerator;
 
 public class MyTestCases {
     WebDriver driver;
     HomePage home;
-    LoginPage login;
+    SupportPage support;
+    SignUpPage sign;
     HotelsPage hotels;
     BookingForm booking;
-    LanguageCurrencyPage lang;
+    OfferPage offer;
+    LanguagePage lang;
+    CurrencyPage currency;
     String url="https://www.booking.com/";
     String country;
     Random rand=new Random();
@@ -40,16 +37,20 @@ public class MyTestCases {
         driver.manage().window().maximize();
         home=new HomePage(driver);
         home.closeSignUpPopupIfExists();
-        lang=new LanguageCurrencyPage(driver);
-        login=new LoginPage(driver);
+        lang=new LanguagePage(driver);
+        sign=new SignUpPage(driver);
         hotels=new HotelsPage(driver);
         booking=new BookingForm(driver);
-    }
+        support=new SupportPage(driver);
+        offer=new OfferPage(driver);
+        currency=new CurrencyPage(driver);
+    } 
     @Test(priority=1)
     public void checkTheHomePage() throws InterruptedException {
     	Thread.sleep(1000);
     	home.checkHomePageTest();
     }
+  
     @Test(priority=2)
     public void searchForHotels() throws InterruptedException, TimeoutException {
     	Thread.sleep(1000);
@@ -61,15 +62,13 @@ public class MyTestCases {
     public void testLanguageSelection() throws InterruptedException {
     	Thread.sleep(1000);
     	lang.openLanguageMenu();
-    	lang.selectRandomLanguage();
     }
     @Test(priority = 4)
     public void testCurrencySelection() throws InterruptedException {
+    	currency.openCurrencyMenu();
     	Thread.sleep(1000);
-    	lang.openCurrencyMenu();
-    	Thread.sleep(1000);
-    	lang.selectRandomCurrency();
     }
+    
     @Test(priority = 5)
     public void openHotelAndBook() throws InterruptedException {
        hotels.reserveHotel();
@@ -79,8 +78,16 @@ public class MyTestCases {
        booking.fillBookingForm();
     }
     @Test(priority=7)
-    public void loginProcess() throws InterruptedException {
-    	login.login();
+    public void signUpProcess() throws InterruptedException {
+    	sign.signUp();
+    }
+    @Test(priority=8)
+    public void testSupportPage() {
+    	support.enterToSupport();
+    }
+    @Test(priority=9)
+    public void checkOfferPage() throws InterruptedException {
+    	offer.enterToOfferPage();
     }
 
     @AfterTest
