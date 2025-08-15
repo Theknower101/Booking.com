@@ -5,8 +5,16 @@
     <classes>
       <class name="myTests.MyTestCases">
         <methods>
+          <include name="testSupportPage"/>
+          <include name="testCurrencySelection"/>
+          <include name="checkTheHomePage"/>
           <include name="tearDown"/>
+          <include name="checkOfferPage"/>
+          <include name="testLanguageSelection"/>
+          <include name="fillBookingForm"/>
+          <include name="searchForHotels"/>
           <include name="setUp"/>
+          <include name="openHotelAndBook"/>
           <include name="signUpProcess"/>
         </methods>
       </class> <!-- myTests.MyTestCases -->
